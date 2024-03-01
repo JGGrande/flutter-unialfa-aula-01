@@ -15,6 +15,23 @@ class _HomePageState extends State<HomePage> {
           title: const Text("Aula 01"),
           backgroundColor: Colors.blue
       ),
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(14),
+            child: TextField(
+              decoration: InputDecoration(
+                  labelText: "Campo de texto",
+                  border: OutlineInputBorder()
+              ),
+            ) ,
+          ),
+          ElevatedButton(
+              onPressed: () {},
+              child: Text("Clique aqui")
+          )
+        ],
+      ),
     );
   }
 }
