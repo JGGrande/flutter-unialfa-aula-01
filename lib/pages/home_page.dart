@@ -17,18 +17,19 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          Padding(
+          const Padding(
             padding: EdgeInsets.all(14),
             child: TextField(
               decoration: InputDecoration(
                   labelText: "Campo de texto",
+                  prefixText: 'R\$',
                   border: OutlineInputBorder()
               ),
             ) ,
           ),
           ElevatedButton(
               onPressed: () {},
-              child: Text("Clique aqui")
+              child: const Text("Clique aqui")
           )
         ],
       ),
